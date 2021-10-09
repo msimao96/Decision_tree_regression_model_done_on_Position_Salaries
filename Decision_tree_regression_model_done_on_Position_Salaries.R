@@ -1,5 +1,3 @@
-# Regression Template
-
 # Importing the dataset
 dataset = read.csv('Position_Salaries.csv')
 dataset = dataset[2:3]
@@ -7,7 +5,7 @@ dataset = dataset[2:3]
 # Fitting the Regression Model to the dataset
 install.packages('rpart')
 library(rpart)
-regressor = rpart(formula = Slary ~., data = dataset,
+regressor = rpart(formula = Salary ~., data = dataset,
                   control = rpart.control(minsplit = 1))
 
 # Predicting a new result
